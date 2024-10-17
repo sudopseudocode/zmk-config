@@ -81,17 +81,6 @@
             quick-tap-ms = <QUICK_TAP_MS>;
             bindings = <&kp>, <&kp>;
         };
-        hyp: hyper {
-            compatible = "zmk,behavior-hold-tap";
-            label = "META_FOR_HYPER";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <TAPPING_TERM_MS>;
-            quick-tap-ms = <QUICK_TAP_MS>;
-            bindings = <&kp>, <&kp>;
-            hold-trigger-key-positions = <22>;
-            hold-trigger-on-release;
-        };
         clt: layer_tap {
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_TAP_MODS";
@@ -135,7 +124,7 @@
             bindings = <                
 &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P
 &lcmd LEFT_COMMAND A  &lalt LEFT_ALT S  &lctrl LEFT_CONTROL D  &ht LEFT_SHIFT F  &kp G  &kp H  &ht RIGHT_SHIFT J  &rm RIGHT_CONTROL K  &rm RIGHT_ALT L  &rm RIGHT_COMMAND APOSTROPHE
-&kp Z  &hyp LEFT_COMMAND X  &ht LA(LC(LSHIFT)) C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH
 &clt NUM TAB  &clt NAVI SPACE  &clt SYM ENTER  &clt NUM BSPC
             >;
         };
