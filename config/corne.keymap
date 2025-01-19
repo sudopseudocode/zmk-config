@@ -123,13 +123,13 @@
 &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P
 &lcmd LEFT_COMMAND A  &lalt LEFT_ALT S  &lctrl LEFT_CONTROL D  &ht LEFT_SHIFT F  &kp G  &kp H  &ht RIGHT_SHIFT J  &rm RIGHT_CONTROL K  &rm RIGHT_ALT L  &rm RIGHT_COMMAND APOSTROPHE
 &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&clt MEDIA ESC  &clt NUM TAB  &clt NAVI SPACE  &clt SYM ENTER  &clt NUM BSPC  &clt FN ESC
+&clt MEDIA ESC  &clt FN TAB  &clt NAVI SPACE  &clt SYM ENTER  &clt NUM BSPC  &clt FN ESC
             >;
         };
 
         navigation {
             bindings = <
-&kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp PG_UP  &none  &kp LC(LS(TAB))  &kp LC(TAB)  &none  &none
+&kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp PG_UP  &none  &none  &none  &none  &none
 &kp LEFT_META  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp PG_DN  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &none
 &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
 &none  &none  &none  &kp ENTER  &kp DEL  &none
@@ -165,9 +165,9 @@
 
         function_keys {
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &none  &none  &none  &none  &none
-&kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &none  &none  &none  &none  &none
-&kp F11  &kp F12  &kp F13  &kp F14  &kp F15  &none  &none  &none  &none  &none
+&kp LEFT  &kp DOWN  &kp UP  &kp RIGHT &none  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
+&kp LEFT_META  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &none  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
+&none  &none  &none  &none  &none  &kp F11  &kp F12  &kp F13  &kp F14  &kp F15
 &none  &none  &none  &none  &none  &none
             >;
         };
