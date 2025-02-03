@@ -96,22 +96,30 @@
         compatible = "zmk,combos";
 
         jk_escape {
+            timeout-ms = <COMBO_TIMEOUT_MS>;
+            require-prior-idle-ms = <PRIOR_IDLE_MS>;
             bindings = <&kp ESCAPE>;
             key-positions = <16 17>;
             layers = <DEFAULT>;
         };
 
         sticky_layer_2 {
+            timeout-ms = <COMBO_TIMEOUT_MS>;
+            require-prior-idle-ms = <PRIOR_IDLE_MS>;
             bindings = <&sl 2>;
             key-positions = <30 24>;
         };
 
         sticky_layer_5 {
+            timeout-ms = <COMBO_TIMEOUT_MS>;
+            require-prior-idle-ms = <PRIOR_IDLE_MS>;
             bindings = <&sl 5>;
             key-positions = <25 33>;
         };
 
         caps_word {
+            timeout-ms = <COMBO_TIMEOUT_MS>;
+            require-prior-idle-ms = <PRIOR_IDLE_MS>;
             bindings = <&caps_word>;
             key-positions = <13 16>;
         };
