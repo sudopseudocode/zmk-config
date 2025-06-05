@@ -6,7 +6,7 @@ manifest:
       url-base: https://github.com/pauldiloreto
   projects:
     - name: zmk
-      remote: fork
+      remote: zmkfirmware
       revision: main
       import: app/west.yml
   self:
